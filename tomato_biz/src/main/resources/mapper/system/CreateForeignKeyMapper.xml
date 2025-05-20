@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.root.mapper.CreateForeignKeyMapper">
+
+    <select id="queryForeignKey" resultType="java.util.Map" parameterType="String">
+        SELECT
+            TABLE_NAME,
+            COLUMN_NAME,
+            CONSTRAINT_NAME
+        FROM
+            INFORMATION_SCHEMA.KEY_COLUMN_USAGE
+        WHERE
+            CONSTRAINT_SCHEMA = #{tableSpace}
+        AND REFERENCED_TABLE_NAME IS NOT NULL
+        AND TABLE_NAME = #{tableName}
+    </select>
+
+    <select id="dropForeignKey"  resultType="java.util.Map" parameterType="String">
+        ALTER TABLE ${tableName} DROP FOREIGN KEY ${foreignKeyName};
+    </select>
+
+
+    <select id="addForeignKey" parameterType="java.util.Map" resultType="java.util.Map">
+        ALTER TABLE ${map.currentTable}
+        ADD CONSTRAINT ${map.foreignKeyName}
+        FOREIGN KEY(${map.currentTableColumn})
+        REFERENCES ${map.refTable}(${map.refTableColumn});
+    </select>
+</mapper>

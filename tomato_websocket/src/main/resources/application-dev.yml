@@ -1,0 +1,64 @@
+server:
+  port: 20014
+spring:
+  #==========================================#
+  #               数据源配置                   #
+  #==========================================#
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+#    password: fyxFYX123
+    url: jdbc:mysql://127.0.0.1:3307/tomato?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&allowMultiQueries=true&useSSL=false&allowPublicKeyRetrieval=true
+#    url: jdbc:mysql://123.60.111.151:3306/tomato?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&allowMultiQueries=true&useSSL=false&allowPublicKeyRetrieval=true
+#    url: jdbc:mysql://127.0.0.1:3306/tomato?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&allowMultiQueries=true&useSSL=false&allowPublicKeyRetrieval=true
+
+#    url: jdbc:mysql://119.23.181.238:3306/zyyx_zhyy_standard4.0?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&allowMultiQueries=true
+
+
+
+
+  #==========================================#
+  #               kafka 配置                  #
+  #==========================================#
+  kafka:
+    # 是否初始化kafka的topic
+    initTopic: 0
+    # 是否开启kafka的listener
+    startListener: 0
+    # topic配置
+    #    topics: ZYYX_DATABASE,PRPA_IN201311UV02_CREATE,PRPA_IN201311UV02_UPDATE,PRPA_IN201311UV02_READ
+    topics: product
+    # broker地址(有多个地址用,分隔)
+    bootstrap-servers: 127.0.0.1:9092
+    #################consumer的配置参数#################
+    consumer:
+      #用于标识此使用者所属的使用者组的唯一字符串
+      group-id: PRPA_IN201311UV02
+
+
+
+
+  #==========================================#
+  #               redis配置                   #
+  #==========================================#
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    # 有密码填密码，没有密码不填
+    password:
+    # 连接超时时间（ms)
+    timeout: 1000
+    # 高版本springboot中使用jedis或者lettuce
+    jedis:
+      pool:
+        # 连接池最大连接数（负值表示无限制）
+        maxactive: 8
+        # 连接池最大阻塞等待时间（负值无限制)
+        maxwait: 5000
+        # 最大空闲链接数
+        maxidle: 8
+        # 最小空闲链接数
+        minidle: 0

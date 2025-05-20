@@ -1,0 +1,141 @@
+#启动端口
+server:
+  port: 20012
+  servlet:
+    context-path: /zhyy
+
+
+# 配置中心
+spring:
+  application:
+  profiles:
+    active: dev
+  freemarker:
+    allow-request-override: false
+    cache: true
+    check-template-location: true
+    charset: UTF-8
+    content-type: text/html
+    expose-request-attributes: false
+    expose-session-attributes: false
+    suffix: .ftl
+    templateEncoding: UTF-8
+    templateLoaderPath: classpath:/html/
+    expose-spring-macro-helpers: false
+    thymeleaf:
+      prefix: classpath:/html/
+      suffix: .html
+    settings:
+      number_format: 0.##
+  jackson:
+    generator:
+      write_numbers_as_strings: true
+    #==========================================#
+    #               文件上传配置                 #
+    #==========================================#
+  servlet:
+    multipart:
+      # 单个文件大小限制
+      max-file-size: 30MB
+      # 总数据的大小
+      max-request-size: 300MB
+
+
+#==========================================#
+#               mybaits-plus配置            #
+#==========================================#
+
+mybatis:
+  configuration:
+      call-setters-on-nulls: true
+  table:
+    auto: update
+    #create	系统启动后，会将所有的表删除掉，然后根据model中配置的结构重新建表，该操作会破坏原有数据。
+    #update	系统会自动判断哪些表是新建的，哪些字段要修改类型等，哪些字段要删除，哪些字段要新增，该操作不会破坏原有数据。
+    #none 		系统不做任何处理。
+    #add		新增表/新增字段/新增索引/新增唯一约束的功能，不做做修改和删除 (只在版本1.0.9.RELEASE及以上支持)。
+  model:
+    pack: com.root.entity #扫描用于创建表的对象的包名，多个包用“,”隔开
+   # tableSpace: ali_pay_user_info
+    tableSpace: tomato
+  database:
+    type: mysql #数据库类型 目前只支持mysql
+
+
+
+
+mybatis-plus:
+  # MyBatis Mapper所对应的XML文件位置
+  mapper-locations: classpath*:/mapper/*Mapper.xml,classpath*:com/gitee/sunchenbin/mybatis/actable/mapping/common/*.xml,classpath*:/mapper/system/*.xml
+  #  mapper-locations: classpath:/mapper/*Mapper.xml,classpath*:com/gitee/sunchenbin/mybatis/actable/mapping/common/*.xml,classpath*:/mapper/system/*.xml
+  global-config:
+    # 自动刷新Mapper对应的XML文件
+    refresh: true
+    # 关闭MP3.0自带的banner
+    banner: false
+    db-config:
+      # 主键类型 0:数据库ID自增 1.未定义 2.用户输入 3 id_worker 4.uuid 5.id_worker字符串表示
+      id-type: 0
+      #字段策略 0:"忽略判断",1:"非 NULL 判断"),2:"非空判断"
+      field-strategy: 1
+      # 默认数据库表下划线命名
+      table-underline: true
+      # 逻辑删除配置
+      # 逻辑删除全局值（1表示已删除，这也是Mybatis Plus的默认配置）
+      logic-delete-value: 1
+      # 逻辑未删除全局值（0表示未删除，这也是Mybatis Plus的默认配置）
+      logic-not-delete-value: 0
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+#==========================================#
+#               swagger公共信息             #
+#==========================================#
+swagger:
+  title: 智慧医院标准化REST接口文档
+  description: 方便前端、后端及测试直观便捷的查看和导出接口文档,同时请后端开发人员定期更新此文档，保证和代码的一致性
+  version: 1.0.0
+  license: 1.0
+  licenseUrl: www.yunmedy.com
+  terms-of-service-url:
+  contact:
+    name: fangchen
+    email: fang.chen@yunmedy.com
+    url:
+
+#==========================================#
+#               监控配置                    #
+#==========================================#
+info:
+  head: head
+  body: body
+management:
+  endpoints:
+    web:
+      exposure:
+        #加载所有的端点，默认只加载了info、health
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+    #可以关闭指定的端点
+    shutdown:
+      enabled: true
+
+#==========================================#
+#               日志管理                    #
+#==========================================#
+logging:
+  level:
+    org.springframework.boot.autoconfigure: ERROR
+    com.zyyx.zyyxcloud.zhyy.standard.biz: DEBUG
+    io.swagger.models.parameters.AbstractSerializableParameter: ERROR
+    com.zyyx.zyyxcloud.job.mapper: DEBUG
+    com.zyyx.zyyxcloud.core.mapper: DEBUG
+    com.anoyi.grpc: DEBUG
+    org.apache.kafka.clients.consumer.ConsumerConfig: ERROR
+    org.apache.kafka.clients.producer.ProducerConfig: ERROR
+    org.apache.kafka.clients.admin.AdminClientConfig: ERROR
+my:
+  payUrl: http://26a226y657.wicp:vip.36486/PayService.asmx

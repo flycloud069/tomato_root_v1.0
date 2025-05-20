@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.root.websocket.mapper.CheckScheduleMapper">
+
+    <select id="list" resultType="com.root.dto.ZhyyCheckSchedule">
+        SELECT
+        *
+        FROM
+        zhyy_check_schedule
+        WHERE
+        id is not null
+        <if test="visit_type !=null and visit_type != ''">
+            and visit_type = #{visit_type}
+        </if>
+        <if test="start_data !=null and start_data != ''">
+            <if test="end_data !=null and end_data != ''">
+                AND visit_date between #{start_data}and #{end_data}
+            </if>
+        </if>
+        <if test="visit_time !=null and visit_time != ''">
+            and visit_time =#{visit_time}
+        </if>
+--         and state='0'
+        limit #{page},#{size};
+
+    </select>
+
+    <delete id="delete" >
+<!--    UPDATE zhyy_check_schedule-->
+<!--    SET state ='1'-->
+<!--    where id in-->
+<!--    <foreach collection="id" item="status" index="index" open="(" close=")" separator=",">-->
+<!--        #{status}-->
+<!--    </foreach>-->
+
+            delete from zhyy_check_schedule
+            where id in
+            <foreach collection="id" item="status" index="index" open="(" close=")" separator=",">
+                #{status}
+            </foreach>
+</delete>
+
+    <select id="page" resultType="map">
+        SELECT
+     COUNT(*)as cout
+        FROM
+         zhyy_check_schedule
+         where
+        id is not null
+        <if test="visit_type !=null and visit_type != ''">
+            and visit_type = #{visit_type}
+        </if>
+        <if test="start_data !=null and start_data != ''">
+            <if test="end_data !=null and end_data != ''">
+                AND visit_date between #{start_data}and #{end_data}
+            </if>
+        </if>
+        <if test="visit_time !=null and visit_time != ''">
+            and visit_time =#{visit_time}
+        </if>
+--         and state='0'
+
+    </select>
+
+
+
+</mapper>

@@ -1,0 +1,4 @@
+# 去掉log日志文件
+/logs
+#去掉生成的class文件
+*target*

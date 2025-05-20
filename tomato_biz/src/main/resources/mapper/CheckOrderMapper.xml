@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.root.mapper.CheckOrderMapper">
+
+    <select id="list" resultType="com.root.dto.ZhyyCheckOrder">
+        SELECT
+        *
+        FROM
+        zhyy_check_order
+        WHERE
+        hos_id = #{hos_id}
+        <if test="visit_type !=null and visit_type != ''">
+            and visit_type = #{visit_type}
+        </if>
+        <if test="patient_name !=null and patient_name != ''">
+            and patient_name like "%"#{patient_name}"%"
+        </if>
+        <if test="start_date !=null and start_date != ''">
+            <if test="end_date !=null and end_date != ''">
+                AND visit_date between #{start_date}and #{end_date}
+            </if>
+        </if>
+
+        order by  visit_date desc
+
+        limit #{page},#{size};
+    </select>
+    <select id="page" resultType="map">
+        SELECT
+     COUNT(*)as cout
+        FROM
+         zhyy_check_order
+        WHERE
+        hos_id = #{hos_id}
+        <if test="visit_type !=null and visit_type != ''">
+            and visit_type = #{visit_type}
+        </if>
+        <if test="patient_name !=null and patient_name != ''">
+            and patient_name like "%"#{patient_name}"%"
+        </if>
+        <if test="start_date !=null and start_date != ''">
+            <if test="end_date !=null and end_date != ''">
+                AND visit_date between #{start_date}and #{end_date}
+            </if>
+        </if>
+
+    </select>
+
+
+</mapper>

@@ -1,0 +1,746 @@
+2024-11-14 09:36:18,772 tomato_biz [main] INFO  [com.tomato.text.SynamicSqlTest] StartupInfoLogger.java:50 - Starting SynamicSqlTest on LAPTOP-I5HMKJKD with PID 204 (started by Fyx in D:\软件项目\java\tomato_git\tomato\tomato_biz)
+2024-11-14 09:36:18,775 tomato_biz [main] INFO  [com.tomato.text.SynamicSqlTest] SpringApplication.java:679 - The following profiles are active: dev
+2024-11-14 09:36:24,495 tomato_biz [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-11-14 09:36:24,500 tomato_biz [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-11-14 09:36:25,621 tomato_biz [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:182 - Finished Spring Data repository scanning in 1101ms. Found 0 repository interfaces.
+2024-11-14 09:36:25,757 tomato_biz [main] INFO  [o.s.c.annotation.ConfigurationClassPostProcessor] ConfigurationClassPostProcessor.java:380 - Cannot enhance @Configuration bean definition 'definitionRegistryPostProcessor' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2024-11-14 09:36:26,222 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$102ae337] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 09:36:26,332 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3c78d1b4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 09:36:26,366 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'rediesProperties' of type [com.root.dto.RediesProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 09:36:26,376 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'poolProperties' of type [com.root.dto.PoolProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 09:36:26,377 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'redisConfig' of type [com.root.config.RedisConfig$$EnhancerBySpringCGLIB$$8b03f609] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 09:36:26,805 tomato_biz [main] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:928 - {dataSource-1} inited
+2024-11-14 09:36:27,153 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysColumnsEntity.
+2024-11-14 09:36:27,187 tomato_biz [main] ERROR [com.baomidou.mybatisplus.core.MybatisConfiguration] MybatisConfiguration.java:92 - mapper[com.root.mapper.SysMenuMapper.saveSysRoleFunction] is ignored, because it exists, maybe from xml file
+2024-11-14 09:36:27,190 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysMenuEntity.
+2024-11-14 09:36:27,222 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysMenuVueEntity.
+2024-11-14 09:36:27,252 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysReportColumnEntity.
+2024-11-14 09:36:27,280 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysServiceEntity.
+2024-11-14 09:36:27,309 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysServiceParamEntity.
+2024-11-14 09:36:27,366 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysUserEntity.
+2024-11-14 09:36:27,562 tomato_biz [main] INFO  [c.g.s.m.actable.manager.handler.StartUpHandlerImpl] StartUpHandlerImpl.java:55 - databaseType=mysql，开始执行mysql的处理方法
+2024-11-14 09:36:27,801 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段table_schema
+2024-11-14 09:36:27,903 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段table_schema
+2024-11-14 09:36:27,904 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段ordinal_position
+2024-11-14 09:36:27,922 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段ordinal_position
+2024-11-14 09:36:27,923 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段character_maximum_length
+2024-11-14 09:36:27,936 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段character_maximum_length
+2024-11-14 09:36:27,937 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段numeric_precision
+2024-11-14 09:36:27,962 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段numeric_precision
+2024-11-14 09:36:27,963 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段numeric_scale
+2024-11-14 09:36:27,974 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段numeric_scale
+2024-11-14 09:36:27,974 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_menu中的字段menu_xh
+2024-11-14 09:36:27,988 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_menu中的字段menu_xh
+2024-11-14 09:36:27,989 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_schema
+2024-11-14 09:36:28,011 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_schema
+2024-11-14 09:36:28,011 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_name
+2024-11-14 09:36:28,020 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_name
+2024-11-14 09:36:28,021 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_comment
+2024-11-14 09:36:28,031 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_comment
+2024-11-14 09:36:28,031 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段engine
+2024-11-14 09:36:28,041 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段engine
+2024-11-14 09:36:28,041 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_collation
+2024-11-14 09:36:28,050 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_collation
+2024-11-14 09:36:28,050 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_index
+2024-11-14 09:36:28,061 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_index
+2024-11-14 09:36:28,062 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_height
+2024-11-14 09:36:28,072 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_height
+2024-11-14 09:36:28,072 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_width
+2024-11-14 09:36:28,082 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_width
+2024-11-14 09:36:28,099 tomato_biz [main] INFO  [com.root.common.MySqlCreateForeignKey] MySqlCreateForeignKey.java:57 - 外键集合{}
+2024-11-14 09:36:28,192 tomato_biz [main] INFO  [com.root.config.RedisConfig] RedisConfig.java:92 - jedisConnectionFactory:初始化了
+2024-11-14 09:36:28,573 tomato_biz [main] INFO  [c.g.s.m.actable.manager.handler.StartUpHandlerImpl] StartUpHandlerImpl.java:55 - databaseType=mysql，开始执行mysql的处理方法
+2024-11-14 09:36:28,631 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段table_schema
+2024-11-14 09:36:28,643 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段table_schema
+2024-11-14 09:36:28,643 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段ordinal_position
+2024-11-14 09:36:28,664 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段ordinal_position
+2024-11-14 09:36:28,664 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段character_maximum_length
+2024-11-14 09:36:28,701 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段character_maximum_length
+2024-11-14 09:36:28,702 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段numeric_precision
+2024-11-14 09:36:28,721 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段numeric_precision
+2024-11-14 09:36:28,721 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段numeric_scale
+2024-11-14 09:36:28,740 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段numeric_scale
+2024-11-14 09:36:28,740 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_menu中的字段menu_xh
+2024-11-14 09:36:28,753 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_menu中的字段menu_xh
+2024-11-14 09:36:28,754 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_schema
+2024-11-14 09:36:28,767 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_schema
+2024-11-14 09:36:28,767 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_name
+2024-11-14 09:36:28,779 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_name
+2024-11-14 09:36:28,779 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_comment
+2024-11-14 09:36:28,790 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_comment
+2024-11-14 09:36:28,790 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段engine
+2024-11-14 09:36:28,800 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段engine
+2024-11-14 09:36:28,801 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_collation
+2024-11-14 09:36:28,812 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_collation
+2024-11-14 09:36:28,812 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_index
+2024-11-14 09:36:28,824 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_index
+2024-11-14 09:36:28,825 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_height
+2024-11-14 09:36:28,835 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_height
+2024-11-14 09:36:28,836 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_width
+2024-11-14 09:36:28,847 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_width
+2024-11-14 09:36:29,360 tomato_biz [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'taskExecutor'
+2024-11-14 09:36:29,362 tomato_biz [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'taskExecutor1'
+2024-11-14 09:36:31,615 tomato_biz [main] WARN  [o.s.w.context.support.GenericWebApplicationContext] AbstractApplicationContext.java:557 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serverEndpointExporter' defined in class path resource [com/root/config/WebSocketConfig.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: javax.websocket.server.ServerContainer not available
+2024-11-14 09:36:31,616 tomato_biz [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'taskExecutor1'
+2024-11-14 09:36:31,616 tomato_biz [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'taskExecutor'
+2024-11-14 09:36:31,624 tomato_biz [main] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:1823 - {dataSource-1} closed
+2024-11-14 09:36:31,640 tomato_biz [main] ERROR [org.springframework.boot.SpringApplication] SpringApplication.java:858 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serverEndpointExporter' defined in class path resource [com/root/config/WebSocketConfig.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: javax.websocket.server.ServerContainer not available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: java.lang.IllegalStateException: javax.websocket.server.ServerContainer not available
+	at org.springframework.util.Assert.state(Assert.java:73)
+	at org.springframework.web.socket.server.standard.ServerEndpointExporter.afterPropertiesSet(ServerEndpointExporter.java:106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1821)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1758)
+	... 41 common frames omitted
+2024-11-14 09:36:31,643 tomato_biz [main] ERROR [o.springframework.test.context.TestContextManager] TestContextManager.java:250 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@4b5a5ed1] to prepare test instance [com.tomato.text.SynamicSqlTest@7da3cbeb]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serverEndpointExporter' defined in class path resource [com/root/config/WebSocketConfig.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: javax.websocket.server.ServerContainer not available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 26 common frames omitted
+Caused by: java.lang.IllegalStateException: javax.websocket.server.ServerContainer not available
+	at org.springframework.util.Assert.state(Assert.java:73)
+	at org.springframework.web.socket.server.standard.ServerEndpointExporter.afterPropertiesSet(ServerEndpointExporter.java:106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1821)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1758)
+	... 41 common frames omitted
+2024-11-14 09:37:20,343 tomato_biz [main] INFO  [com.tomato.text.SynamicSqlTest] StartupInfoLogger.java:50 - Starting SynamicSqlTest on LAPTOP-I5HMKJKD with PID 28912 (started by Fyx in D:\软件项目\java\tomato_git\tomato\tomato_biz)
+2024-11-14 09:37:20,345 tomato_biz [main] INFO  [com.tomato.text.SynamicSqlTest] SpringApplication.java:679 - The following profiles are active: dev
+2024-11-14 09:37:25,854 tomato_biz [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-11-14 09:37:25,857 tomato_biz [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-11-14 09:37:27,089 tomato_biz [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:182 - Finished Spring Data repository scanning in 1216ms. Found 0 repository interfaces.
+2024-11-14 09:37:27,208 tomato_biz [main] INFO  [o.s.c.annotation.ConfigurationClassPostProcessor] ConfigurationClassPostProcessor.java:380 - Cannot enhance @Configuration bean definition 'definitionRegistryPostProcessor' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2024-11-14 09:37:27,599 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$dd102d23] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 09:37:27,713 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$95e1ba0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 09:37:27,742 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'rediesProperties' of type [com.root.dto.RediesProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 09:37:27,753 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'poolProperties' of type [com.root.dto.PoolProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 09:37:27,756 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'redisConfig' of type [com.root.config.RedisConfig$$EnhancerBySpringCGLIB$$57e93ff5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 09:37:28,169 tomato_biz [main] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:928 - {dataSource-1} inited
+2024-11-14 09:37:28,469 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysColumnsEntity.
+2024-11-14 09:37:28,497 tomato_biz [main] ERROR [com.baomidou.mybatisplus.core.MybatisConfiguration] MybatisConfiguration.java:92 - mapper[com.root.mapper.SysMenuMapper.saveSysRoleFunction] is ignored, because it exists, maybe from xml file
+2024-11-14 09:37:28,500 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysMenuEntity.
+2024-11-14 09:37:28,527 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysMenuVueEntity.
+2024-11-14 09:37:28,558 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysReportColumnEntity.
+2024-11-14 09:37:28,588 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysServiceEntity.
+2024-11-14 09:37:28,614 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysServiceParamEntity.
+2024-11-14 09:37:28,671 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysUserEntity.
+2024-11-14 09:37:28,898 tomato_biz [main] INFO  [c.g.s.m.actable.manager.handler.StartUpHandlerImpl] StartUpHandlerImpl.java:55 - databaseType=mysql，开始执行mysql的处理方法
+2024-11-14 09:37:29,186 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段character_maximum_length
+2024-11-14 09:37:29,238 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段character_maximum_length
+2024-11-14 09:37:29,238 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段numeric_precision
+2024-11-14 09:37:29,255 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段numeric_precision
+2024-11-14 09:37:29,256 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段numeric_scale
+2024-11-14 09:37:29,269 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段numeric_scale
+2024-11-14 09:37:29,269 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段ordinal_position
+2024-11-14 09:37:29,282 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段ordinal_position
+2024-11-14 09:37:29,282 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段table_schema
+2024-11-14 09:37:29,296 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段table_schema
+2024-11-14 09:37:29,296 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_menu中的字段menu_xh
+2024-11-14 09:37:29,340 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_menu中的字段menu_xh
+2024-11-14 09:37:29,340 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段engine
+2024-11-14 09:37:29,351 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段engine
+2024-11-14 09:37:29,352 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_collation
+2024-11-14 09:37:29,364 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_collation
+2024-11-14 09:37:29,365 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_comment
+2024-11-14 09:37:29,374 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_comment
+2024-11-14 09:37:29,374 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_name
+2024-11-14 09:37:29,386 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_name
+2024-11-14 09:37:29,386 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_schema
+2024-11-14 09:37:29,398 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_schema
+2024-11-14 09:37:29,399 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_height
+2024-11-14 09:37:29,411 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_height
+2024-11-14 09:37:29,412 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_index
+2024-11-14 09:37:29,425 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_index
+2024-11-14 09:37:29,426 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_width
+2024-11-14 09:37:29,439 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_width
+2024-11-14 09:37:29,464 tomato_biz [main] INFO  [com.root.common.MySqlCreateForeignKey] MySqlCreateForeignKey.java:57 - 外键集合{}
+2024-11-14 09:37:29,548 tomato_biz [main] INFO  [com.root.config.RedisConfig] RedisConfig.java:92 - jedisConnectionFactory:初始化了
+2024-11-14 09:37:29,876 tomato_biz [main] INFO  [c.g.s.m.actable.manager.handler.StartUpHandlerImpl] StartUpHandlerImpl.java:55 - databaseType=mysql，开始执行mysql的处理方法
+2024-11-14 09:37:29,933 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段character_maximum_length
+2024-11-14 09:37:29,946 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段character_maximum_length
+2024-11-14 09:37:29,947 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段numeric_precision
+2024-11-14 09:37:29,960 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段numeric_precision
+2024-11-14 09:37:29,960 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段numeric_scale
+2024-11-14 09:37:29,972 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段numeric_scale
+2024-11-14 09:37:29,972 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段ordinal_position
+2024-11-14 09:37:29,983 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段ordinal_position
+2024-11-14 09:37:29,983 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段table_schema
+2024-11-14 09:37:29,997 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段table_schema
+2024-11-14 09:37:29,997 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_menu中的字段menu_xh
+2024-11-14 09:37:30,009 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_menu中的字段menu_xh
+2024-11-14 09:37:30,010 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段engine
+2024-11-14 09:37:30,025 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段engine
+2024-11-14 09:37:30,026 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_collation
+2024-11-14 09:37:30,037 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_collation
+2024-11-14 09:37:30,038 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_comment
+2024-11-14 09:37:30,050 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_comment
+2024-11-14 09:37:30,050 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_name
+2024-11-14 09:37:30,060 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_name
+2024-11-14 09:37:30,061 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_schema
+2024-11-14 09:37:30,074 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_schema
+2024-11-14 09:37:30,075 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_height
+2024-11-14 09:37:30,088 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_height
+2024-11-14 09:37:30,089 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_index
+2024-11-14 09:37:30,101 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_index
+2024-11-14 09:37:30,102 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_width
+2024-11-14 09:37:30,118 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_width
+2024-11-14 09:37:30,631 tomato_biz [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'taskExecutor'
+2024-11-14 09:37:30,634 tomato_biz [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'taskExecutor1'
+2024-11-14 09:37:32,691 tomato_biz [main] WARN  [o.s.w.context.support.GenericWebApplicationContext] AbstractApplicationContext.java:557 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serverEndpointExporter' defined in class path resource [com/root/config/WebSocketConfig.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: javax.websocket.server.ServerContainer not available
+2024-11-14 09:37:32,692 tomato_biz [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'taskExecutor1'
+2024-11-14 09:37:32,692 tomato_biz [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'taskExecutor'
+2024-11-14 09:37:32,700 tomato_biz [main] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:1823 - {dataSource-1} closed
+2024-11-14 09:37:32,715 tomato_biz [main] ERROR [org.springframework.boot.SpringApplication] SpringApplication.java:858 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serverEndpointExporter' defined in class path resource [com/root/config/WebSocketConfig.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: javax.websocket.server.ServerContainer not available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: java.lang.IllegalStateException: javax.websocket.server.ServerContainer not available
+	at org.springframework.util.Assert.state(Assert.java:73)
+	at org.springframework.web.socket.server.standard.ServerEndpointExporter.afterPropertiesSet(ServerEndpointExporter.java:106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1821)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1758)
+	... 41 common frames omitted
+2024-11-14 09:37:32,718 tomato_biz [main] ERROR [o.springframework.test.context.TestContextManager] TestContextManager.java:250 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@96def03] to prepare test instance [com.tomato.text.SynamicSqlTest@6ae37b3]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serverEndpointExporter' defined in class path resource [com/root/config/WebSocketConfig.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: javax.websocket.server.ServerContainer not available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 26 common frames omitted
+Caused by: java.lang.IllegalStateException: javax.websocket.server.ServerContainer not available
+	at org.springframework.util.Assert.state(Assert.java:73)
+	at org.springframework.web.socket.server.standard.ServerEndpointExporter.afterPropertiesSet(ServerEndpointExporter.java:106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1821)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1758)
+	... 41 common frames omitted
+2024-11-14 09:39:46,317 tomato_biz [main] INFO  [com.tomato.text.SynamicSqlTest] StartupInfoLogger.java:50 - Starting SynamicSqlTest on LAPTOP-I5HMKJKD with PID 27848 (started by Fyx in D:\软件项目\java\tomato_git\tomato\tomato_biz)
+2024-11-14 09:39:46,319 tomato_biz [main] INFO  [com.tomato.text.SynamicSqlTest] SpringApplication.java:679 - The following profiles are active: dev
+2024-11-14 09:39:50,261 tomato_biz [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-11-14 09:39:50,264 tomato_biz [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-11-14 09:39:51,215 tomato_biz [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:182 - Finished Spring Data repository scanning in 935ms. Found 0 repository interfaces.
+2024-11-14 09:39:51,302 tomato_biz [main] INFO  [o.s.c.annotation.ConfigurationClassPostProcessor] ConfigurationClassPostProcessor.java:380 - Cannot enhance @Configuration bean definition 'definitionRegistryPostProcessor' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2024-11-14 09:39:51,629 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$38ec2a57] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 09:39:51,733 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$653a18d4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 09:39:51,756 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'rediesProperties' of type [com.root.dto.RediesProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 09:39:51,766 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'poolProperties' of type [com.root.dto.PoolProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 09:39:51,766 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'redisConfig' of type [com.root.config.RedisConfig$$EnhancerBySpringCGLIB$$b3c53d29] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 09:39:52,120 tomato_biz [main] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:928 - {dataSource-1} inited
+2024-11-14 09:39:52,437 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysColumnsEntity.
+2024-11-14 09:39:52,462 tomato_biz [main] ERROR [com.baomidou.mybatisplus.core.MybatisConfiguration] MybatisConfiguration.java:92 - mapper[com.root.mapper.SysMenuMapper.saveSysRoleFunction] is ignored, because it exists, maybe from xml file
+2024-11-14 09:39:52,465 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysMenuEntity.
+2024-11-14 09:39:52,486 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysMenuVueEntity.
+2024-11-14 09:39:52,503 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysReportColumnEntity.
+2024-11-14 09:39:52,524 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysServiceEntity.
+2024-11-14 09:39:52,546 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysServiceParamEntity.
+2024-11-14 09:39:52,596 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysUserEntity.
+2024-11-14 09:39:52,763 tomato_biz [main] INFO  [c.g.s.m.actable.manager.handler.StartUpHandlerImpl] StartUpHandlerImpl.java:55 - databaseType=mysql，开始执行mysql的处理方法
+2024-11-14 09:39:52,951 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段character_maximum_length
+2024-11-14 09:39:53,024 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段character_maximum_length
+2024-11-14 09:39:53,024 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段numeric_precision
+2024-11-14 09:39:53,033 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段numeric_precision
+2024-11-14 09:39:53,034 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段numeric_scale
+2024-11-14 09:39:53,044 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段numeric_scale
+2024-11-14 09:39:53,044 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段ordinal_position
+2024-11-14 09:39:53,070 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段ordinal_position
+2024-11-14 09:39:53,072 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段table_schema
+2024-11-14 09:39:53,101 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段table_schema
+2024-11-14 09:39:53,101 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_menu中的字段menu_xh
+2024-11-14 09:39:53,115 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_menu中的字段menu_xh
+2024-11-14 09:39:53,116 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段engine
+2024-11-14 09:39:53,127 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段engine
+2024-11-14 09:39:53,128 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_collation
+2024-11-14 09:39:53,136 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_collation
+2024-11-14 09:39:53,137 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_comment
+2024-11-14 09:39:53,146 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_comment
+2024-11-14 09:39:53,147 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_name
+2024-11-14 09:39:53,160 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_name
+2024-11-14 09:39:53,161 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_schema
+2024-11-14 09:39:53,173 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_schema
+2024-11-14 09:39:53,173 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_height
+2024-11-14 09:39:53,184 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_height
+2024-11-14 09:39:53,184 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_index
+2024-11-14 09:39:53,198 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_index
+2024-11-14 09:39:53,199 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_width
+2024-11-14 09:39:53,210 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_width
+2024-11-14 09:39:53,225 tomato_biz [main] INFO  [com.root.common.MySqlCreateForeignKey] MySqlCreateForeignKey.java:57 - 外键集合{}
+2024-11-14 09:39:53,298 tomato_biz [main] INFO  [com.root.config.RedisConfig] RedisConfig.java:92 - jedisConnectionFactory:初始化了
+2024-11-14 09:39:53,582 tomato_biz [main] INFO  [c.g.s.m.actable.manager.handler.StartUpHandlerImpl] StartUpHandlerImpl.java:55 - databaseType=mysql，开始执行mysql的处理方法
+2024-11-14 09:39:53,629 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段character_maximum_length
+2024-11-14 09:39:53,640 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段character_maximum_length
+2024-11-14 09:39:53,640 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段numeric_precision
+2024-11-14 09:39:53,652 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段numeric_precision
+2024-11-14 09:39:53,652 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段numeric_scale
+2024-11-14 09:39:53,665 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段numeric_scale
+2024-11-14 09:39:53,665 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段ordinal_position
+2024-11-14 09:39:53,684 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段ordinal_position
+2024-11-14 09:39:53,684 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段table_schema
+2024-11-14 09:39:53,694 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段table_schema
+2024-11-14 09:39:53,696 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_menu中的字段menu_xh
+2024-11-14 09:39:53,707 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_menu中的字段menu_xh
+2024-11-14 09:39:53,707 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段engine
+2024-11-14 09:39:53,716 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段engine
+2024-11-14 09:39:53,717 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_collation
+2024-11-14 09:39:53,727 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_collation
+2024-11-14 09:39:53,727 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_comment
+2024-11-14 09:39:53,739 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_comment
+2024-11-14 09:39:53,739 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_name
+2024-11-14 09:39:53,772 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_name
+2024-11-14 09:39:53,773 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_schema
+2024-11-14 09:39:53,790 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_schema
+2024-11-14 09:39:53,790 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_height
+2024-11-14 09:39:53,818 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_height
+2024-11-14 09:39:53,818 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_index
+2024-11-14 09:39:53,831 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_index
+2024-11-14 09:39:53,831 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_width
+2024-11-14 09:39:53,841 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_width
+2024-11-14 09:39:54,258 tomato_biz [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'taskExecutor'
+2024-11-14 09:39:54,259 tomato_biz [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'taskExecutor1'
+2024-11-14 09:39:57,000 tomato_biz [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'taskScheduler'
+2024-11-14 09:39:57,072 tomato_biz [main] INFO  [s.d.s.web.plugins.DocumentationPluginsBootstrapper] DocumentationPluginsBootstrapper.java:120 - Context refreshed
+2024-11-14 09:39:57,094 tomato_biz [main] INFO  [s.d.s.web.plugins.DocumentationPluginsBootstrapper] DocumentationPluginsBootstrapper.java:123 - Found 1 custom documentation plugin(s)
+2024-11-14 09:39:57,107 tomato_biz [main] INFO  [s.d.spring.web.scanners.ApiListingReferenceScanner] ApiListingReferenceScanner.java:41 - Scanning for api listing references
+2024-11-14 09:39:57,207 tomato_biz [main] INFO  [s.d.s.w.r.operation.CachingOperationNameGenerator] CachingOperationNameGenerator.java:40 - Generating unique operation named: sendAllMessageUsingGET_1
+2024-11-14 09:39:57,243 tomato_biz [main] INFO  [com.tomato.text.SynamicSqlTest] StartupInfoLogger.java:59 - Started SynamicSqlTest in 11.432 seconds (JVM running for 12.228)
+2024-11-14 09:39:57,266 tomato_biz [Thread-3] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'taskScheduler'
+2024-11-14 09:39:57,267 tomato_biz [Thread-3] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'taskExecutor1'
+2024-11-14 09:39:57,267 tomato_biz [Thread-3] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'taskExecutor'
+2024-11-14 09:39:57,272 tomato_biz [Thread-3] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:1823 - {dataSource-1} closed
+2024-11-14 09:41:50,504 tomato_biz [main] INFO  [com.tomato.text.SynamicSqlTest] StartupInfoLogger.java:50 - Starting SynamicSqlTest on LAPTOP-I5HMKJKD with PID 30212 (started by Fyx in D:\软件项目\java\tomato_git\tomato\tomato_biz)
+2024-11-14 09:41:50,506 tomato_biz [main] INFO  [com.tomato.text.SynamicSqlTest] SpringApplication.java:679 - The following profiles are active: dev
+2024-11-14 09:41:54,884 tomato_biz [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-11-14 09:41:54,887 tomato_biz [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-11-14 09:41:55,930 tomato_biz [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:182 - Finished Spring Data repository scanning in 1028ms. Found 0 repository interfaces.
+2024-11-14 09:41:56,025 tomato_biz [main] INFO  [o.s.c.annotation.ConfigurationClassPostProcessor] ConfigurationClassPostProcessor.java:380 - Cannot enhance @Configuration bean definition 'definitionRegistryPostProcessor' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2024-11-14 09:41:56,332 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$11e37e5e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 09:41:56,353 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3e316cdb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 09:41:56,459 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'rediesProperties' of type [com.root.dto.RediesProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 09:41:56,467 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'poolProperties' of type [com.root.dto.PoolProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 09:41:56,469 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'redisConfig' of type [com.root.config.RedisConfig$$EnhancerBySpringCGLIB$$8cbc9130] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 09:41:56,866 tomato_biz [main] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:928 - {dataSource-1} inited
+2024-11-14 09:41:57,151 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysColumnsEntity.
+2024-11-14 09:41:57,175 tomato_biz [main] ERROR [com.baomidou.mybatisplus.core.MybatisConfiguration] MybatisConfiguration.java:92 - mapper[com.root.mapper.SysMenuMapper.saveSysRoleFunction] is ignored, because it exists, maybe from xml file
+2024-11-14 09:41:57,177 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysMenuEntity.
+2024-11-14 09:41:57,197 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysMenuVueEntity.
+2024-11-14 09:41:57,216 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysReportColumnEntity.
+2024-11-14 09:41:57,235 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysServiceEntity.
+2024-11-14 09:41:57,255 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysServiceParamEntity.
+2024-11-14 09:41:57,290 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysUserEntity.
+2024-11-14 09:41:57,443 tomato_biz [main] INFO  [c.g.s.m.actable.manager.handler.StartUpHandlerImpl] StartUpHandlerImpl.java:55 - databaseType=mysql，开始执行mysql的处理方法
+2024-11-14 09:41:57,626 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段character_maximum_length
+2024-11-14 09:41:57,677 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段character_maximum_length
+2024-11-14 09:41:57,678 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段numeric_precision
+2024-11-14 09:41:57,687 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段numeric_precision
+2024-11-14 09:41:57,688 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段numeric_scale
+2024-11-14 09:41:57,697 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段numeric_scale
+2024-11-14 09:41:57,697 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段ordinal_position
+2024-11-14 09:41:57,719 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段ordinal_position
+2024-11-14 09:41:57,720 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段table_schema
+2024-11-14 09:41:57,734 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段table_schema
+2024-11-14 09:41:57,735 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_menu中的字段menu_xh
+2024-11-14 09:41:57,755 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_menu中的字段menu_xh
+2024-11-14 09:41:57,755 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段engine
+2024-11-14 09:41:57,764 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段engine
+2024-11-14 09:41:57,765 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_collation
+2024-11-14 09:41:57,778 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_collation
+2024-11-14 09:41:57,778 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_comment
+2024-11-14 09:41:57,798 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_comment
+2024-11-14 09:41:57,799 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_name
+2024-11-14 09:41:57,806 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_name
+2024-11-14 09:41:57,806 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_schema
+2024-11-14 09:41:57,819 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_schema
+2024-11-14 09:41:57,819 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_height
+2024-11-14 09:41:57,828 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_height
+2024-11-14 09:41:57,828 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_index
+2024-11-14 09:41:57,838 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_index
+2024-11-14 09:41:57,839 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_width
+2024-11-14 09:41:57,880 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_width
+2024-11-14 09:41:57,897 tomato_biz [main] INFO  [com.root.common.MySqlCreateForeignKey] MySqlCreateForeignKey.java:57 - 外键集合{}
+2024-11-14 09:41:57,958 tomato_biz [main] INFO  [com.root.config.RedisConfig] RedisConfig.java:92 - jedisConnectionFactory:初始化了
+2024-11-14 09:41:58,236 tomato_biz [main] INFO  [c.g.s.m.actable.manager.handler.StartUpHandlerImpl] StartUpHandlerImpl.java:55 - databaseType=mysql，开始执行mysql的处理方法
+2024-11-14 09:41:58,288 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段character_maximum_length
+2024-11-14 09:41:58,299 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段character_maximum_length
+2024-11-14 09:41:58,299 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段numeric_precision
+2024-11-14 09:41:58,311 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段numeric_precision
+2024-11-14 09:41:58,312 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段numeric_scale
+2024-11-14 09:41:58,323 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段numeric_scale
+2024-11-14 09:41:58,323 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段ordinal_position
+2024-11-14 09:41:58,334 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段ordinal_position
+2024-11-14 09:41:58,334 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段table_schema
+2024-11-14 09:41:58,346 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段table_schema
+2024-11-14 09:41:58,346 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_menu中的字段menu_xh
+2024-11-14 09:41:58,357 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_menu中的字段menu_xh
+2024-11-14 09:41:58,358 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段engine
+2024-11-14 09:41:58,368 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段engine
+2024-11-14 09:41:58,368 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_collation
+2024-11-14 09:41:58,379 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_collation
+2024-11-14 09:41:58,379 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_comment
+2024-11-14 09:41:58,389 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_comment
+2024-11-14 09:41:58,390 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_name
+2024-11-14 09:41:58,399 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_name
+2024-11-14 09:41:58,399 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_schema
+2024-11-14 09:41:58,409 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_schema
+2024-11-14 09:41:58,409 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_height
+2024-11-14 09:41:58,420 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_height
+2024-11-14 09:41:58,420 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_index
+2024-11-14 09:41:58,429 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_index
+2024-11-14 09:41:58,429 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_width
+2024-11-14 09:41:58,439 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_width
+2024-11-14 09:41:58,911 tomato_biz [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'taskExecutor'
+2024-11-14 09:41:58,915 tomato_biz [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'taskExecutor1'
+2024-11-14 09:42:01,715 tomato_biz [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'taskScheduler'
+2024-11-14 09:42:01,784 tomato_biz [main] INFO  [s.d.s.web.plugins.DocumentationPluginsBootstrapper] DocumentationPluginsBootstrapper.java:120 - Context refreshed
+2024-11-14 09:42:01,804 tomato_biz [main] INFO  [s.d.s.web.plugins.DocumentationPluginsBootstrapper] DocumentationPluginsBootstrapper.java:123 - Found 1 custom documentation plugin(s)
+2024-11-14 09:42:01,817 tomato_biz [main] INFO  [s.d.spring.web.scanners.ApiListingReferenceScanner] ApiListingReferenceScanner.java:41 - Scanning for api listing references
+2024-11-14 09:42:01,927 tomato_biz [main] INFO  [s.d.s.w.r.operation.CachingOperationNameGenerator] CachingOperationNameGenerator.java:40 - Generating unique operation named: sendAllMessageUsingGET_1
+2024-11-14 09:42:01,952 tomato_biz [main] INFO  [com.tomato.text.SynamicSqlTest] StartupInfoLogger.java:59 - Started SynamicSqlTest in 12.034 seconds (JVM running for 12.836)
+2024-11-14 09:42:01,975 tomato_biz [Thread-3] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'taskScheduler'
+2024-11-14 09:42:01,976 tomato_biz [Thread-3] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'taskExecutor1'
+2024-11-14 09:42:01,977 tomato_biz [Thread-3] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'taskExecutor'
+2024-11-14 09:42:01,983 tomato_biz [Thread-3] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:1823 - {dataSource-1} closed
+2024-11-14 09:48:47,384 tomato_biz [main] INFO  [com.tomato.text.SynamicSqlTest] StartupInfoLogger.java:50 - Starting SynamicSqlTest on LAPTOP-I5HMKJKD with PID 29392 (started by Fyx in D:\软件项目\java\tomato_git\tomato\tomato_biz)
+2024-11-14 09:48:47,385 tomato_biz [main] INFO  [com.tomato.text.SynamicSqlTest] SpringApplication.java:679 - The following profiles are active: dev
+2024-11-14 09:48:51,030 tomato_biz [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-11-14 09:48:51,033 tomato_biz [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-11-14 09:48:52,034 tomato_biz [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:182 - Finished Spring Data repository scanning in 985ms. Found 0 repository interfaces.
+2024-11-14 09:48:52,116 tomato_biz [main] INFO  [o.s.c.annotation.ConfigurationClassPostProcessor] ConfigurationClassPostProcessor.java:380 - Cannot enhance @Configuration bean definition 'definitionRegistryPostProcessor' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2024-11-14 09:48:52,474 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$bc87e4b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 09:48:52,552 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$38166cc8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 09:48:52,578 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'rediesProperties' of type [com.root.dto.RediesProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 09:48:52,586 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'poolProperties' of type [com.root.dto.PoolProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 09:48:52,587 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'redisConfig' of type [com.root.config.RedisConfig$$EnhancerBySpringCGLIB$$86a1911d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 09:48:52,939 tomato_biz [main] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:928 - {dataSource-1} inited
+2024-11-14 09:48:53,213 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysColumnsEntity.
+2024-11-14 09:48:53,244 tomato_biz [main] ERROR [com.baomidou.mybatisplus.core.MybatisConfiguration] MybatisConfiguration.java:92 - mapper[com.root.mapper.SysMenuMapper.saveSysRoleFunction] is ignored, because it exists, maybe from xml file
+2024-11-14 09:48:53,248 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysMenuEntity.
+2024-11-14 09:48:53,275 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysMenuVueEntity.
+2024-11-14 09:48:53,297 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysReportColumnEntity.
+2024-11-14 09:48:53,321 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysServiceEntity.
+2024-11-14 09:48:53,347 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysServiceParamEntity.
+2024-11-14 09:48:53,386 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysUserEntity.
+2024-11-14 09:48:53,532 tomato_biz [main] INFO  [c.g.s.m.actable.manager.handler.StartUpHandlerImpl] StartUpHandlerImpl.java:55 - databaseType=mysql，开始执行mysql的处理方法
+2024-11-14 09:48:53,707 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段table_schema
+2024-11-14 09:48:53,770 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段table_schema
+2024-11-14 09:48:53,770 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段ordinal_position
+2024-11-14 09:48:53,787 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段ordinal_position
+2024-11-14 09:48:53,788 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段character_maximum_length
+2024-11-14 09:48:53,798 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段character_maximum_length
+2024-11-14 09:48:53,798 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段numeric_precision
+2024-11-14 09:48:53,814 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段numeric_precision
+2024-11-14 09:48:53,814 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段numeric_scale
+2024-11-14 09:48:53,829 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段numeric_scale
+2024-11-14 09:48:53,829 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_menu中的字段menu_xh
+2024-11-14 09:48:53,841 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_menu中的字段menu_xh
+2024-11-14 09:48:53,842 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_schema
+2024-11-14 09:48:53,851 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_schema
+2024-11-14 09:48:53,851 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_name
+2024-11-14 09:48:53,878 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_name
+2024-11-14 09:48:53,878 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_comment
+2024-11-14 09:48:53,886 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_comment
+2024-11-14 09:48:53,886 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段engine
+2024-11-14 09:48:53,896 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段engine
+2024-11-14 09:48:53,896 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_collation
+2024-11-14 09:48:53,906 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_collation
+2024-11-14 09:48:53,906 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_index
+2024-11-14 09:48:53,916 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_index
+2024-11-14 09:48:53,916 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_height
+2024-11-14 09:48:53,926 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_height
+2024-11-14 09:48:53,927 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_width
+2024-11-14 09:48:53,936 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_width
+2024-11-14 09:48:53,949 tomato_biz [main] INFO  [com.root.common.MySqlCreateForeignKey] MySqlCreateForeignKey.java:57 - 外键集合{}
+2024-11-14 09:48:54,013 tomato_biz [main] INFO  [com.root.config.RedisConfig] RedisConfig.java:92 - jedisConnectionFactory:初始化了
+2024-11-14 09:48:54,301 tomato_biz [main] INFO  [c.g.s.m.actable.manager.handler.StartUpHandlerImpl] StartUpHandlerImpl.java:55 - databaseType=mysql，开始执行mysql的处理方法
+2024-11-14 09:48:54,347 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段table_schema
+2024-11-14 09:48:54,368 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段table_schema
+2024-11-14 09:48:54,368 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段ordinal_position
+2024-11-14 09:48:54,379 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段ordinal_position
+2024-11-14 09:48:54,379 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段character_maximum_length
+2024-11-14 09:48:54,393 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段character_maximum_length
+2024-11-14 09:48:54,393 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段numeric_precision
+2024-11-14 09:48:54,403 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段numeric_precision
+2024-11-14 09:48:54,404 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段numeric_scale
+2024-11-14 09:48:54,414 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段numeric_scale
+2024-11-14 09:48:54,414 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_menu中的字段menu_xh
+2024-11-14 09:48:54,425 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_menu中的字段menu_xh
+2024-11-14 09:48:54,425 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_schema
+2024-11-14 09:48:54,434 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_schema
+2024-11-14 09:48:54,435 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_name
+2024-11-14 09:48:54,445 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_name
+2024-11-14 09:48:54,445 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_comment
+2024-11-14 09:48:54,456 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_comment
+2024-11-14 09:48:54,456 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段engine
+2024-11-14 09:48:54,466 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段engine
+2024-11-14 09:48:54,467 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_collation
+2024-11-14 09:48:54,498 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_collation
+2024-11-14 09:48:54,498 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_index
+2024-11-14 09:48:54,521 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_index
+2024-11-14 09:48:54,521 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_height
+2024-11-14 09:48:54,538 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_height
+2024-11-14 09:48:54,538 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_width
+2024-11-14 09:48:54,549 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_width
+2024-11-14 09:48:54,995 tomato_biz [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'taskExecutor'
+2024-11-14 09:48:54,997 tomato_biz [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'taskExecutor1'
+2024-11-14 09:48:57,674 tomato_biz [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'taskScheduler'
+2024-11-14 09:48:57,735 tomato_biz [main] INFO  [s.d.s.web.plugins.DocumentationPluginsBootstrapper] DocumentationPluginsBootstrapper.java:120 - Context refreshed
+2024-11-14 09:48:57,752 tomato_biz [main] INFO  [s.d.s.web.plugins.DocumentationPluginsBootstrapper] DocumentationPluginsBootstrapper.java:123 - Found 1 custom documentation plugin(s)
+2024-11-14 09:48:57,763 tomato_biz [main] INFO  [s.d.spring.web.scanners.ApiListingReferenceScanner] ApiListingReferenceScanner.java:41 - Scanning for api listing references
+2024-11-14 09:48:57,868 tomato_biz [main] INFO  [s.d.s.w.r.operation.CachingOperationNameGenerator] CachingOperationNameGenerator.java:40 - Generating unique operation named: sendAllMessageUsingGET_1
+2024-11-14 09:48:57,901 tomato_biz [main] INFO  [com.tomato.text.SynamicSqlTest] StartupInfoLogger.java:59 - Started SynamicSqlTest in 10.993 seconds (JVM running for 11.959)
+2024-11-14 09:48:57,927 tomato_biz [Thread-3] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'taskScheduler'
+2024-11-14 09:48:57,928 tomato_biz [Thread-3] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'taskExecutor1'
+2024-11-14 09:48:57,930 tomato_biz [Thread-3] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'taskExecutor'
+2024-11-14 09:48:57,936 tomato_biz [Thread-3] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:1823 - {dataSource-1} closed
+2024-11-14 10:10:02,426 tomato_biz [main] INFO  [com.tomato.text.SynamicSqlTest] StartupInfoLogger.java:50 - Starting SynamicSqlTest on LAPTOP-I5HMKJKD with PID 4500 (started by Fyx in D:\软件项目\java\tomato_git\tomato\tomato_biz)
+2024-11-14 10:10:02,427 tomato_biz [main] INFO  [com.tomato.text.SynamicSqlTest] SpringApplication.java:679 - The following profiles are active: dev
+2024-11-14 10:10:06,334 tomato_biz [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-11-14 10:10:06,338 tomato_biz [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-11-14 10:10:07,464 tomato_biz [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:182 - Finished Spring Data repository scanning in 1112ms. Found 0 repository interfaces.
+2024-11-14 10:10:07,569 tomato_biz [main] INFO  [o.s.c.annotation.ConfigurationClassPostProcessor] ConfigurationClassPostProcessor.java:380 - Cannot enhance @Configuration bean definition 'definitionRegistryPostProcessor' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2024-11-14 10:10:07,895 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$7053e2e2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 10:10:07,920 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9ca1d15f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 10:10:08,009 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'rediesProperties' of type [com.root.dto.RediesProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 10:10:08,020 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'poolProperties' of type [com.root.dto.PoolProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 10:10:08,021 tomato_biz [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'redisConfig' of type [com.root.config.RedisConfig$$EnhancerBySpringCGLIB$$eb2cf5b4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-14 10:10:08,383 tomato_biz [main] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:928 - {dataSource-1} inited
+2024-11-14 10:10:08,671 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysColumnsEntity.
+2024-11-14 10:10:08,704 tomato_biz [main] ERROR [com.baomidou.mybatisplus.core.MybatisConfiguration] MybatisConfiguration.java:92 - mapper[com.root.mapper.SysMenuMapper.saveSysRoleFunction] is ignored, because it exists, maybe from xml file
+2024-11-14 10:10:08,707 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysMenuEntity.
+2024-11-14 10:10:08,742 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysMenuVueEntity.
+2024-11-14 10:10:08,780 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysReportColumnEntity.
+2024-11-14 10:10:08,823 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysServiceEntity.
+2024-11-14 10:10:08,863 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysServiceParamEntity.
+2024-11-14 10:10:08,949 tomato_biz [main] WARN  [c.b.mybatisplus.core.toolkit.TableInfoHelper] TableInfoHelper.java:250 - Warn: Could not find @TableId in Class: com.root.entity.SysUserEntity.
+2024-11-14 10:10:09,193 tomato_biz [main] INFO  [c.g.s.m.actable.manager.handler.StartUpHandlerImpl] StartUpHandlerImpl.java:55 - databaseType=mysql，开始执行mysql的处理方法
+2024-11-14 10:10:09,401 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段table_schema
+2024-11-14 10:10:09,448 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段table_schema
+2024-11-14 10:10:09,448 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段ordinal_position
+2024-11-14 10:10:09,462 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段ordinal_position
+2024-11-14 10:10:09,462 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段character_maximum_length
+2024-11-14 10:10:09,474 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段character_maximum_length
+2024-11-14 10:10:09,474 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段numeric_precision
+2024-11-14 10:10:09,486 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段numeric_precision
+2024-11-14 10:10:09,486 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段numeric_scale
+2024-11-14 10:10:09,501 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段numeric_scale
+2024-11-14 10:10:09,502 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_menu中的字段menu_xh
+2024-11-14 10:10:09,516 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_menu中的字段menu_xh
+2024-11-14 10:10:09,516 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_schema
+2024-11-14 10:10:09,527 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_schema
+2024-11-14 10:10:09,527 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_name
+2024-11-14 10:10:09,538 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_name
+2024-11-14 10:10:09,539 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_comment
+2024-11-14 10:10:09,548 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_comment
+2024-11-14 10:10:09,549 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段engine
+2024-11-14 10:10:09,558 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段engine
+2024-11-14 10:10:09,558 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_collation
+2024-11-14 10:10:09,570 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_collation
+2024-11-14 10:10:09,571 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_index
+2024-11-14 10:10:09,580 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_index
+2024-11-14 10:10:09,581 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_height
+2024-11-14 10:10:09,592 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_height
+2024-11-14 10:10:09,593 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_width
+2024-11-14 10:10:09,604 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_width
+2024-11-14 10:10:09,626 tomato_biz [main] INFO  [com.root.common.MySqlCreateForeignKey] MySqlCreateForeignKey.java:57 - 外键集合{}
+2024-11-14 10:10:09,706 tomato_biz [main] INFO  [com.root.config.RedisConfig] RedisConfig.java:92 - jedisConnectionFactory:初始化了
+2024-11-14 10:10:09,983 tomato_biz [main] INFO  [c.g.s.m.actable.manager.handler.StartUpHandlerImpl] StartUpHandlerImpl.java:55 - databaseType=mysql，开始执行mysql的处理方法
+2024-11-14 10:10:10,030 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段table_schema
+2024-11-14 10:10:10,041 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段table_schema
+2024-11-14 10:10:10,041 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段ordinal_position
+2024-11-14 10:10:10,052 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段ordinal_position
+2024-11-14 10:10:10,052 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段character_maximum_length
+2024-11-14 10:10:10,064 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段character_maximum_length
+2024-11-14 10:10:10,064 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段numeric_precision
+2024-11-14 10:10:10,075 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段numeric_precision
+2024-11-14 10:10:10,075 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_columns中的字段numeric_scale
+2024-11-14 10:10:10,087 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_columns中的字段numeric_scale
+2024-11-14 10:10:10,087 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_menu中的字段menu_xh
+2024-11-14 10:10:10,099 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_menu中的字段menu_xh
+2024-11-14 10:10:10,099 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_schema
+2024-11-14 10:10:10,107 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_schema
+2024-11-14 10:10:10,107 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_name
+2024-11-14 10:10:10,117 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_name
+2024-11-14 10:10:10,117 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_comment
+2024-11-14 10:10:10,125 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_comment
+2024-11-14 10:10:10,126 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段engine
+2024-11-14 10:10:10,139 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段engine
+2024-11-14 10:10:10,139 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_table中的字段table_collation
+2024-11-14 10:10:10,151 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_table中的字段table_collation
+2024-11-14 10:10:10,151 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_index
+2024-11-14 10:10:10,162 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_index
+2024-11-14 10:10:10,162 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_height
+2024-11-14 10:10:10,171 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_height
+2024-11-14 10:10:10,172 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:755 - 开始修改表sys_report_column中的字段sys_report_column_width
+2024-11-14 10:10:10,183 tomato_biz [main] INFO  [c.g.s.m.a.m.system.SysMysqlCreateTableManagerImpl] SysMysqlCreateTableManagerImpl.java:757 - 完成修改表sys_report_column中的字段sys_report_column_width
+2024-11-14 10:10:10,609 tomato_biz [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'taskExecutor'
+2024-11-14 10:10:10,613 tomato_biz [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'taskExecutor1'
+2024-11-14 10:10:13,307 tomato_biz [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'taskScheduler'
+2024-11-14 10:10:13,382 tomato_biz [main] INFO  [s.d.s.web.plugins.DocumentationPluginsBootstrapper] DocumentationPluginsBootstrapper.java:120 - Context refreshed
+2024-11-14 10:10:13,400 tomato_biz [main] INFO  [s.d.s.web.plugins.DocumentationPluginsBootstrapper] DocumentationPluginsBootstrapper.java:123 - Found 1 custom documentation plugin(s)
+2024-11-14 10:10:13,411 tomato_biz [main] INFO  [s.d.spring.web.scanners.ApiListingReferenceScanner] ApiListingReferenceScanner.java:41 - Scanning for api listing references
+2024-11-14 10:10:13,516 tomato_biz [main] INFO  [s.d.s.w.r.operation.CachingOperationNameGenerator] CachingOperationNameGenerator.java:40 - Generating unique operation named: sendAllMessageUsingGET_1
+2024-11-14 10:10:13,548 tomato_biz [main] INFO  [com.tomato.text.SynamicSqlTest] StartupInfoLogger.java:59 - Started SynamicSqlTest in 11.688 seconds (JVM running for 12.619)
+2024-11-14 10:10:13,573 tomato_biz [Thread-3] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'taskScheduler'
+2024-11-14 10:10:13,574 tomato_biz [Thread-3] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'taskExecutor1'
+2024-11-14 10:10:13,574 tomato_biz [Thread-3] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'taskExecutor'
+2024-11-14 10:10:13,581 tomato_biz [Thread-3] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:1823 - {dataSource-1} closed

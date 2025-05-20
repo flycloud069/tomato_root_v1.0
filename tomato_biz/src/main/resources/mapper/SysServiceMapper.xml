@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.root.mapper.SysServiceMapper">
+
+    <select id="list" resultType="com.root.entity.SysServiceEntity">
+        SELECT
+        *
+        FROM
+        sys_service
+    </select>
+
+    <select id="selSysServiceByVlue" resultType="com.root.entity.SysServiceEntity">
+        SELECT
+        *
+        FROM
+        sys_service WHERE sys_service_value = #{sys_service_value}
+    </select>
+
+    <select id="getSysService" resultType="java.util.Map">
+        call exec_sys_service(#{sql,jdbcType=VARCHAR})
+    </select>
+
+    <insert id="insertSysService">
+        INSERT into sys_service (sys_service_id,sys_service_name,sys_service_value,sys_service_sql)
+        SELECT uuid(), #{sys_service_name},#{sys_service_value},#{sys_service_sql}
+    </insert>
+
+</mapper>

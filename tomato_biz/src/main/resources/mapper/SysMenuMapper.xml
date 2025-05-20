@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.root.mapper.SysMenuMapper">
+
+    <select id="list" resultType="com.root.entity.SysMenuEntity">
+        		SELECT
+        *
+        FROM
+        sys_menu
+
+				WHERE  sys_menu_id IN (SELECT DISTINCT sys_function_id from sys_function_role_relat where sys_role_id IN (	SELECT sys_role_id from sys_role_relat_user WHERE sys_user_id=#{loginDto.sys_user_id}))
+    </select>
+    <select id="getMenu" resultType="map">
+        SELECT menu_page path ,menu_title_id name,  A.sys_menu_id AS id ,
+        parent_menu_id parentId ,component AS component, title AS title,B.redirect AS redirect ,B.hidden,A.menu_xh  from  sys_menu A
+        LEFT JOIN sys_menu_vue B  ON A.sys_menu_id=B.sys_menu_id
+        WHERE  A.sys_menu_id IN (SELECT DISTINCT sys_function_id from sys_function_role_relat where sys_role_id IN (	SELECT sys_role_id from sys_role_relat_user WHERE sys_user_id=#{loginDto.sys_user_id}))
+        ORDER  BY ifnull(menu_xh,999)
+    </select>
+ <insert id="saveSysRoleFunction">
+         INSERT into sys_function_role_relat (
+     sys_function_role_relat_id,
+     sys_role_id,
+     sys_function_id
+	)
+
+     <foreach item="sysFunctionDTO" collection="sysFunctionDTOList" separator="union" open="(" close=")" index="">
+     SELECT UUID(),#{sysFunctionDTO.sys_role_id},#{sysFunctionDTO.sys_function_id}
+     </foreach>
+ </insert>
+    <insert id="saveSysRoleFunction">
+        INSERT into sys_function_role_relat (
+        sys_function_role_relat_id,
+        sys_role_id,
+        sys_function_id
+        )
+
+        <foreach item="sysFunctionDTO" collection="sysFunctionDTOList" separator="union" open="(" close=")" index="">
+            SELECT UUID(),#{sysFunctionDTO.sys_role_id},#{sysFunctionDTO.sys_function_id}
+        </foreach>
+    </insert>
+    <delete id="deleteSysRoleFunction">
+
+DELETE from sys_function_role_relat WHERE sys_role_id ="1"
+AND sys_function_id  in
+        <foreach item="sysFunctionDTO" collection="sysFunctionDTOList" separator="," open="(" close=")" index="">
+            #{sysFunctionDTO.sys_function_id}
+        </foreach>
+
+    </delete>
+</mapper>
