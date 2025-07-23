@@ -120,7 +120,7 @@ public class SysBaseServiceServiceImpl  implements SysBaseServiceService {
                 "DELETE  from " + sysBaseServiceModel.getTable_name() + "  WHERE ";
 
         for (SysBaseImportServiceModel sysBaseImportServiceModel : sysBaseImportServiceModelList) {
-            creatSql += "  "+sysBaseImportServiceModel.getColumn_name() + " = \"" + sysBaseServiceImportParam.get(sysBaseImportServiceModel.getColumn_name()) + "\" and";
+            creatSql += "  "+sysBaseImportServiceModel.getColumn_name() + " = \"" + StrUtil.toString(sysBaseServiceImportParam.get(sysBaseImportServiceModel.getColumn_name())) + "\" and";
         }
         creatSql = creatSql.substring(0, creatSql.length() - 3);
         creatSql += ";;" + "";
@@ -138,7 +138,7 @@ public class SysBaseServiceServiceImpl  implements SysBaseServiceService {
         creatSql += "WHERE ";
 
         for (SysBaseImportServiceModel sysBaseImportServiceModel : sysBaseImportServiceModelList) {
-            creatSql += "  "+sysBaseImportServiceModel.getColumn_name() + " = " +  (BeanUtil.isEmpty(sysBaseServiceImportParam.get(sysBaseImportServiceModel.getColumn_name()))?"NULL ":("\""+SqlStringUtil.escapeString(sysBaseServiceImportParam.get(sysBaseImportServiceModel.getColumn_name())))+"\"") + " and";
+            creatSql += "  "+sysBaseImportServiceModel.getColumn_name() + " = " +  (BeanUtil.isEmpty(Convert.toStr (sysBaseServiceImportParam.get(sysBaseImportServiceModel.getColumn_name())))?"NULL ":("\""+SqlStringUtil.escapeString(Convert.toStr ( sysBaseServiceImportParam.get(sysBaseImportServiceModel.getColumn_name()))) +"\"") )+ " and";
         }
         creatSql = creatSql.substring(0, creatSql.length() - 3);
         creatSql += ";;" + "";
@@ -155,7 +155,7 @@ public class SysBaseServiceServiceImpl  implements SysBaseServiceService {
         if (sysBaseImportServiceModelList.size()>0) {
             creatSql+=" where ";
             for (SysBaseImportServiceModel sysBaseImportServiceModel : sysBaseImportServiceModelList) {
-                creatSql += "  "+ sysBaseImportServiceModel.getColumn_name() + " = \"" + sysBaseServiceImportParam.get(sysBaseImportServiceModel.getColumn_name()) + "\" and";
+                creatSql += "  "+ sysBaseImportServiceModel.getColumn_name() + " = \"" + Convert.toStr(sysBaseServiceImportParam.get(sysBaseImportServiceModel.getColumn_name())) + "\" and";
             }
             creatSql = creatSql.substring(0, creatSql.length() - 3);
         }

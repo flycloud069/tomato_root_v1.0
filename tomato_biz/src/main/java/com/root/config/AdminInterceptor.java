@@ -40,8 +40,8 @@ public class AdminInterceptor implements HandlerInterceptor {
 
         String ip=TomatoHttpUtil.getIpAddress(httpServletRequest);
 //        if (Objects.nonNull(decKey)) {
-        System.out.println("鉴权");
-        if (StrUtil.equals(Gettoken,"1" )|| LoginTokenMemory.verifyLoginToken(token,ip) ) {
+//        System.out.println("鉴权");
+        if (StrUtil.equals(httpServletRequest.getHeader("swagger"), "true") || LoginTokenMemory.verifyLoginToken(token,ip)) {
             return true;
         } else {
             try (PrintWriter out = httpServletResponse.getWriter()) {

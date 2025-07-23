@@ -65,7 +65,7 @@ public class TomatoHttpUtil {
             rs += s;
         }
 
-        System.out.println(rs);
+//        System.out.println(rs);
 return rs;
     }
 

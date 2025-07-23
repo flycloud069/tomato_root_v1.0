@@ -20,9 +20,9 @@ public class SysUserEntity {
     @Column(name = "sys_user_id", type = MySqlTypeConstant.VARCHAR, comment = "GID", length = 36, isNull = false)
     private String sysUserId;
     @IsKey
-    @Column(name = "username", type = MySqlTypeConstant.VARCHAR, comment = "用户名", length = 10, isNull = false)
+    @Column(name = "username", type = MySqlTypeConstant.VARCHAR, comment = "用户名", length = 200, isNull = false)
     private String username;
-    @Column(name = "name", type = MySqlTypeConstant.VARCHAR, comment = "用户名称", length = 10, isNull = false)
+    @Column(name = "name", type = MySqlTypeConstant.VARCHAR, comment = "用户名称", length = 200, isNull = false)
     private String name;
     @Column(name = "password", type = MySqlTypeConstant.VARCHAR, comment = "用户密码", length = 32, isNull = false)
     private String password;

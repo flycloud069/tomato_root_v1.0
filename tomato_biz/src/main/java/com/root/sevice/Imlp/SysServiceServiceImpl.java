@@ -37,7 +37,6 @@ public class SysServiceServiceImpl extends ServiceImpl<SysServiceMapper, SysServ
         for (SysServiceParamEntity sysServiceParamEntity : sysServiceParamEntityList) {
             String value = jsonObject1.getStr(sysServiceParamEntity.getSysServiceParamValue());
             value = StrUtil.isBlank(value) ? "" : value;
-            System.out.println(sysServiceParamEntity.getSysServiceParamValue());
             sql = StrUtil.replace(sql, "#{" + sysServiceParamEntity.getSysServiceParamValue() + "}", SqlStringUtil.escapeString(value) );
         }
 
@@ -74,7 +73,7 @@ public class SysServiceServiceImpl extends ServiceImpl<SysServiceMapper, SysServ
     /*调用系统服务返回Map */
     public Map esecSysService(SysServiceDto sysServiceDto) {
         String sql = execSql(sysServiceDto);
-        System.out.println(sql);
+        CLStrLog(sql);
         String sqls[] = sql.split(";");
         Map map = new HashMap();
         int i = 0;
@@ -97,7 +96,7 @@ public class SysServiceServiceImpl extends ServiceImpl<SysServiceMapper, SysServ
 
     /*调用系统服务返回Map */
     public Map esecSysService(String sql) {
-        System.out.println(sql);
+        CLStrLog(sql);
         String sqls[] = sql.split(";");
         Map map = new HashMap();
         int i = 0;
@@ -119,7 +118,7 @@ public class SysServiceServiceImpl extends ServiceImpl<SysServiceMapper, SysServ
     }
     /*调用系统服务返回Map */
     public Map esecSysServiceNoSemicolon(String sql) {
-        System.out.println(sql);
+        CLStrLog(sql);
         String sqls[] = sql.split(";;");
         Map map = new HashMap();
         int i = 0;
@@ -140,7 +139,7 @@ public class SysServiceServiceImpl extends ServiceImpl<SysServiceMapper, SysServ
         return map;
     }
     public List esecSysServiceList(String sql) {
-        System.out.println(sql);
+        CLStrLog(sql);
         String sqls[] = sql.split(";");
         List list = new ArrayList();
         for (String esecsql : sqls) {
@@ -151,5 +150,17 @@ public class SysServiceServiceImpl extends ServiceImpl<SysServiceMapper, SysServ
             }
         }
         return list;
+    }
+
+    /**
+     * 日志
+     * @param str
+     */
+    public void CLStrLog(String str) {
+        if (str.contains("sys_base_import_service")||str.contains("sys_base_service")||str.contains("sys_base_output_service")||str.contains("sys_interface_log")||str.contains("sys_ai_service")){
+            return;
+        }else {
+            System.out.println(str);
+        }
     }
 }

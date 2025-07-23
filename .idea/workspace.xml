@@ -9,198 +9,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7d78c67-57a7-4277-87e5-1e9cc8a3278a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/common/SysfileCommon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/config/SysDynamicClassConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/controller/SysTimeContrlller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/dto/SysFileUploadDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/dto/SysUserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/dto/TimeDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/entity/outside/sys_file_imageModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/memory/SysClassMemory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/Imlp/SysImageFileServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/Imlp/SysSqlTransformServerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/Imlp/SysUpdateServerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/SysFileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/SysSqlTransformServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/SysUpdateServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/classs/SysDynamicFormulaForPostgreSQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/classs/SysSqlTransformForPostgreSQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/test/QuickStart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomato_biz/src/test/java/com/root/sevice/Imlp/SysBaseServiceServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomato_biz/src/test/java/com/tomato/text/SynamicSqlTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomato_websocket/src/main/java/com/root/websocket/controller/SysFileController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomato_websocket/src/main/java/com/root/websocket/controller/SysUpdateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomato_websocket/src/main/resources/apiclient_key.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomato_websocket/src/main/resources/pub_key.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cn_hutool_hutool_all_4_5_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_spring_boot_starter_1_1_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_3_0_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_annotation_3_0_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_boot_starter_3_0_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_core_3_0_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_extension_3_0_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_generator_3_0_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_gitee_sunchenbin_mybatis_actable_mybatis_enhance_actable_1_1_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_06.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_SparseBitSet_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_clients_2_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_4_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_4_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_4_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_3_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_11_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_14_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_java_websocket_Java_WebSocket_1_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_lz4_lz4_java_1_4_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_0_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mdkt_compiler_InMemoryJavaCompiler_1_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_23_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_2_1_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_1_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_quartz_2_1_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_1_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_1_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_websocket_2_1_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_kafka_spring_kafka_2_2_4_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_2_4_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_5_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_websocket_5_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/CopilotChatHistory.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/CopilotSideBarWebPersist.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/CopilotWebChatHistory.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.rules/projectRules.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/enums/ProjectStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/handler/GenericEnumTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/handler/ProjectStatusTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/Imlp/SysModelExportServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/SysModelExportService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/util/ExcelExporterUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tomato_websocket/src/main/java/com/root/websocket/controller/SysExportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/周报模板.pptx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/工作总结_付云翔_2025.07.04.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_biz/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tomato_biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/java/com/WkdbackmannngeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/WkdbackmannngeApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/java/com/gitee/sunchenbin/mybatis/actable/command/CreateTableParam.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/java/com/gitee/sunchenbin/mybatis/actable/dao/system/CreateMysqlTablesMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/java/com/gitee/sunchenbin/mybatis/actable/manager/system/SysMysqlCreateTableManagerImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/config/AdminInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/config/AdminInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/config/MyFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/config/MyFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/config/SysAIStartConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/config/SysAIStartConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/config/WebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/config/WebSocketConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/dto/SysBaseServiceDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/dto/SysBaseServiceDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/dto/SysCreatTableDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/dto/SysCreatTableDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/dto/SysMenuDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/dto/SysMenuDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/dto/SysServicePageDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/dto/SysServicePageDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/entity/SysMenuEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/entity/SysMenuEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/entity/SysUserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/entity/SysUserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/entity/outside/SysUserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/entity/outside/SysUserModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/Imlp/SysAiServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/Imlp/SysAiServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/Imlp/SysBaseServiceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/Imlp/SysBaseServiceServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/Imlp/SysDynamicMethodServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/Imlp/SysDynamicMethodServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/Imlp/SysFilesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/Imlp/SysFilesServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/Imlp/SysServiceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/Imlp/SysServiceServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/Imlp/SysTableServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/Imlp/SysTableServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/Imlp/SysWordFileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/Imlp/SysWordFileServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/SysBaseServiceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/SysBaseServiceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/SysServiceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/SysServiceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/SysTableService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/SysTableService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/SysWordFileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/sevice/SysWordFileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/resources/bank.p" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/resources/mapper/SysMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/src/main/resources/mapper/SysMenuMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_biz/tomato_biz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/tomato_biz.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_root.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_websocket/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_websocket/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/util/AESUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/util/AESUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/util/RsaUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/util/RsaUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/util/TomatoHttpUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_biz/src/main/java/com/root/util/TomatoHttpUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tomato_websocket/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_websocket/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_websocket/src/main/java/com/root/websocket/controller/SysInputController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_websocket/src/main/java/com/root/websocket/controller/SysMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_websocket/src/main/java/com/root/websocket/controller/SysMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomato_websocket/src/main/java/com/root/websocket/controller/SysBaseServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_websocket/src/main/java/com/root/websocket/controller/SysBaseServiceController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tomato_websocket/src/main/java/com/root/websocket/controller/SysServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_websocket/src/main/java/com/root/websocket/controller/SysServiceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_websocket/src/main/java/com/root/websocket/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_websocket/src/main/java/com/root/websocket/controller/SysUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_websocket/src/main/java/com/root/websocket/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_websocket/src/main/java/com/root/websocket/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_websocket/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_websocket/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_websocket/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_websocket/src/main/resources/application-prod.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_websocket/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_websocket/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomato_websocket/tomato_websocket.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_websocket/tomato_websocket.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomato_websocket/src/main/resources/api_XF.py" beforeDir="false" afterPath="$PROJECT_DIR$/tomato_websocket/src/main/resources/api_XF.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -728,49 +565,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.SynamicSqlTest.contextLoads.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SynamicSqlTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SysBaseServiceServiceImplTest.testGetBaseServiceMap.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.tomato_biz [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.tomato_biz [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.tomato_biz [package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.tomato_biz [test].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.tomato_root [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.tomato_root [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.tomato_root [test].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.tomato_websocket [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.tomato_websocket [install].executor&quot;: &quot;Run&quot;,
-    &quot;Notification.DisplayName-DoNotAsk-Plugins Suggestion&quot;: &quot;有可用的插件建议&quot;,
-    &quot;Notification.DoNotAsk-Plugins Suggestion&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit3&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3&quot;: &quot;junit.framework.TestCase&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/软件项目/java/tomato_git/tomato/tomato_websocket/src/main/resources&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;库&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.65747124&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;应用程序.QuickStart.executor&quot;: &quot;Debug&quot;,
-    &quot;应用程序.TomatoWebsocketApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;应用程序.WkdbackmannngeApplication.executor&quot;: &quot;Debug&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.SynamicSqlTest.contextLoads.executor": "Run",
+    "JUnit.SynamicSqlTest.executor": "Run",
+    "JUnit.SysBaseServiceServiceImplTest.testGetBaseServiceMap.executor": "Run",
+    "Maven.tomato_biz [clean].executor": "Run",
+    "Maven.tomato_biz [install].executor": "Run",
+    "Maven.tomato_biz [package].executor": "Run",
+    "Maven.tomato_biz [test].executor": "Run",
+    "Maven.tomato_root [clean].executor": "Run",
+    "Maven.tomato_root [install].executor": "Run",
+    "Maven.tomato_root [test].executor": "Run",
+    "Maven.tomato_websocket [clean].executor": "Run",
+    "Maven.tomato_websocket [install].executor": "Run",
+    "Notification.DisplayName-DoNotAsk-Plugins Suggestion": "有可用的插件建议",
+    "Notification.DoNotAsk-Plugins Suggestion": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit3",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3": "junit.framework.TestCase",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/软件项目/java/tomato_git/tomato",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.65747124",
+    "settings.editor.selected.configurable": "build.tools",
+    "应用程序.ExcelExporterUtil.executor": "Debug",
+    "应用程序.QuickStart.executor": "Debug",
+    "应用程序.SysModelExportServiceImpl.executor": "Run",
+    "应用程序.TomatoWebsocketApplication.executor": "Debug",
+    "应用程序.WkdbackmannngeApplication.executor": "Debug"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.tomato.text" />
       <recent name="com.root.websocket.util" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\软件项目\java\tomato_git\tomato" />
       <recent name="D:\软件项目\java\tomato_git\tomato\tomato_websocket\src\main\resources" />
       <recent name="D:\软件项目\java\tomato\tomato_websocket\target" />
       <recent name="D:\软件项目\java\tomato\tomato_websocket\src\main\resources" />
       <recent name="D:\tomato\tomato_biz\src\main\java" />
-      <recent name="D:\tomato\tomato_websocket\src\main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\软件项目\java\tomato\tomato_biz\src\main\resources\mapper" />
@@ -790,7 +629,7 @@
       <recent name="com.root.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.TomatoWebsocketApplication">
+  <component name="RunManager" selected="应用程序.SysModelExportServiceImpl">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -804,6 +643,20 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
+    <configuration name="ExcelExporterUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.root.util.ExcelExporterUtil" />
+      <module name="tomato_biz" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.root.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="QuickStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.root.test.QuickStart" />
       <module name="tomato_biz" />
@@ -811,6 +664,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.root.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SysModelExportServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.root.sevice.Imlp.SysModelExportServiceImpl" />
+      <module name="tomato_biz" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.root.sevice.Imlp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -889,13 +756,17 @@
       <envs />
     </configuration>
     <list>
+      <item itemvalue="应用程序.SysModelExportServiceImpl" />
+      <item itemvalue="应用程序.ExcelExporterUtil" />
       <item itemvalue="应用程序.QuickStart" />
       <item itemvalue="应用程序.TomatoWebsocketApplication" />
       <item itemvalue="应用程序.WkdbackmannngeApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.SysModelExportServiceImpl" />
         <item itemvalue="应用程序.TomatoWebsocketApplication" />
+        <item itemvalue="应用程序.ExcelExporterUtil" />
         <item itemvalue="应用程序.WkdbackmannngeApplication" />
         <item itemvalue="应用程序.QuickStart" />
       </list>
@@ -1258,6 +1129,19 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.apache.poi.xwpf.usermodel.XWPFParagraph" memberName="runs" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="row.table.tableRows.get(0).tableCells" />
+        <watch expression="table.text" />
+        <watch expression="sourceRow.tableCells" />
+        <watch expression="sourceRow.tableCells" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.5.16/hutool-all-4.5.16-sources.jar!/cn/hutool/json/JSONUtil.java">

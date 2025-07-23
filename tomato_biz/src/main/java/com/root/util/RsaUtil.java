@@ -100,7 +100,7 @@ public class RsaUtil {
     public static String encrypt(String s) {
         try {
             s = URLUtil.encode(s);
-            System.out.println(s);
+//            System.out.println(s);
             String publicKey= SysConfig.getconfig("selfPublic");
             byte[] content = s.getBytes();
             byte[] encoded = base64Decode(publicKey);
@@ -144,17 +144,22 @@ public class RsaUtil {
      */
     public static String decrypt(String s) {
         try {
-             String privateKey=SysConfig.getconfig("otherPrivate");
+            String privateKey = SysConfig.getconfig("otherPrivate");
             byte[] content = base64Decode(s);
             byte[] encoded = base64Decode(privateKey);
-            RSAPrivateKey rsaPrivateKey = (RSAPrivateKey) KeyFactory.getInstance("RSA").generatePrivate(new PKCS8EncodedKeySpec(encoded));
+            RSAPrivateKey rsaPrivateKey = (RSAPrivateKey) KeyFactory.getInstance("RSA")
+                    .generatePrivate(new PKCS8EncodedKeySpec(encoded));
             Cipher cipher = Cipher.getInstance("RSA");
             cipher.init(Cipher.DECRYPT_MODE, rsaPrivateKey);
-            //分段解密
+
+            // 计算最大解密块大小
+            int keySize = rsaPrivateKey.getModulus().bitLength();
+            int maxDecryptBlock = keySize / 8;
+
             byte[] enBytes = new byte[0];
-            for (int i = 0; i < content.length; i += MAX_DECRYPT_BLOCK){
-                //注意要使用2的倍数，否则会出现加密后的内容再解密时为乱码
-                byte[] doFinal = cipher.doFinal(subarray(content, i,MAX_DECRYPT_BLOCK));
+            for (int i = 0; i < content.length; i += maxDecryptBlock) {
+                int inputLen = Math.min(content.length - i, maxDecryptBlock);
+                byte[] doFinal = cipher.doFinal(subarray(content, i, i + inputLen));
                 enBytes = addBytes(enBytes, doFinal);
             }
 
@@ -281,4 +286,3 @@ if (data2.length==0){
         System.out.println(b);
  }
 }
-

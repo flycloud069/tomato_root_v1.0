@@ -26,6 +26,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
+import java.io.OutputStream;
 import java.io.PrintWriter;
 
 import java.security.NoSuchAlgorithmException;
@@ -85,8 +86,8 @@ public class MyFilter implements Filter {
         String ip = "";
         String user = "";
         System.out.println("请求地址:" + request.getRequestURI());
-        System.out.println(request.getMethod());
-        System.out.println(StrUtil.equals(request.getHeader("swagger"), "true") ? "swagger请求" : "普通请求");
+//        System.out.println(request.getMethod());
+       // System.out.println(StrUtil.equals(request.getHeader("swagger"), "true") ? "swagger请求" : "普通请求");
         if (StrUtil.equals(request.getMethod(), "POST") && !StrUtil.equals(request.getHeader("swagger"), "true")) {
             LogHttpServletRequestWrapper wrapper1 = new LogHttpServletRequestWrapper((HttpServletRequest) servletRequest);
             context = wrapper1.getData();
@@ -102,7 +103,7 @@ public class MyFilter implements Filter {
                 }
             }
             ip = TomatoHttpUtil.getIp32Address(request);
-            System.out.println(wrapper1.getData());
+            //System.out.println(wrapper1.getData());
             if (!StrUtil.equals(Convert.toStr(JSONUtil.parseObj(wrapper1.getData()).get("data")), "false") && !StrUtil.equals(Convert.toStr(JSONUtil.parseObj(wrapper1.getData()).get("sign")), "false")) {
                 String aes = (String) JSONUtil.parseObj(wrapper1.getData()).get("aes");
                 aes = RsaUtil.decrypt(aes);
@@ -123,39 +124,52 @@ public class MyFilter implements Filter {
             SysInterfaceLogModel sysInterfaceLogModel = new SysInterfaceLogModel(uuid.toString(), date, type, user, token, ip, url, method, context, DateUtil.now());
             sysBaseServiceService.getBaseServiceList(SysInterfaceLogModel.class, new SysBaseServiceDTO("AddSysInterfaceLog", BeanUtil.beanToMap(sysInterfaceLogModel)));
             filterChain.doFilter(wrapper1, responseWrapper);
+            if(responseWrapper.getHeader("Content-Disposition")==null) {
+                type = "请求接口出参";
+                try {
+                    byte[] resData = responseWrapper.getResponseData();
+                    String str = new String(resData);
+//                System.out.println(str);
+                    date = str;
+                    String sign = RsaUtil.sign(str);
+                    long l = System.currentTimeMillis();
 
-            type = "请求接口出参";
-            try {
+//                System.out.printf("开始加密时间：%d", l);
+                    String aesKey = AESUtil.generateAESKey();
+                    String aes = RsaUtil.encrypt(aesKey);
+                    String data = AESUtil.encryptAES(str, aesKey);
+                    long l1 = System.currentTimeMillis();
+//                System.out.printf("结束加密时间：%d", l1);
+//                System.out.printf("时间差：%d", l1 - l);
+
+                    PrintWriter out = servletResponse.getWriter();
+                    Map map = new HashMap();
+                    map.put("aes", aes);
+                    map.put("data", data);
+                    map.put("sign", sign);
+//                System.out.println(JSONUtil.parse(map).toStringPretty());
+                    context = JSONUtil.parse(map).toStringPretty();
+                    out.print(JSONUtil.parse(map).toStringPretty());
+                    out.flush();
+                    out.close();
+                    SysInterfaceLogModel sysInterfaceLogModel2 = new SysInterfaceLogModel(uuid.toString(), date, type, user, token, ip, url, method, context, DateUtil.now());
+                    sysBaseServiceService.getBaseServiceList(SysInterfaceLogModel.class, new SysBaseServiceDTO("AddSysInterfaceLog", BeanUtil.beanToMap(sysInterfaceLogModel2)));
+
+                } catch (Exception e) {
+                    System.out.println(e);
+                }
+            }else{
                 byte[] resData = responseWrapper.getResponseData();
                 String str = new String(resData);
-                System.out.println(str);
-                date = str;
-                String sign = RsaUtil.sign(str);
-                long l = System.currentTimeMillis();
 
-                System.out.printf("开始加密时间：%d", l);
-                String aesKey =AESUtil.generateAESKey();
-                String aes = RsaUtil.encrypt(aesKey);
-                String data = AESUtil.encryptAES(str,aesKey);
-                long l1 = System.currentTimeMillis();
-                System.out.printf("结束加密时间：%d", l1);
-                System.out.printf("时间差：%d", l1 - l);
+                try (OutputStream out = servletResponse.getOutputStream()) {
+                    out.write(resData);
+                    out.flush();
+                } catch (IOException e) {
+                    // 处理异常
+                }
 
-                PrintWriter out = servletResponse.getWriter();
-                Map map = new HashMap();
-                map.put("aes", aes);
-                map.put("data", data);
-                map.put("sign", sign);
-                System.out.println(JSONUtil.parse(map).toStringPretty());
-                context = JSONUtil.parse(map).toStringPretty();
-                out.print(JSONUtil.parse(map).toStringPretty());
-                out.flush();
-                out.close();
-                SysInterfaceLogModel sysInterfaceLogModel2 = new SysInterfaceLogModel(uuid.toString(), date, type, user, token, ip, url, method, context, DateUtil.now());
-                sysBaseServiceService.getBaseServiceList(SysInterfaceLogModel.class, new SysBaseServiceDTO("AddSysInterfaceLog", BeanUtil.beanToMap(sysInterfaceLogModel2)));
 
-            } catch (Exception e) {
-                System.out.println(e);
             }
         } else if (StrUtil.equals(request.getMethod(), "Get") && !StrUtil.equals(request.getHeader("swagger"), "true")){
             LoginDto loginDto = LoginTokenMemory.getUserIdByToken(request.getParameter("access-token"));

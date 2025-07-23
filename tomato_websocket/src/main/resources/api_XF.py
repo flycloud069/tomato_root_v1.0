@@ -1,14 +1,90 @@
 from flask import Flask, jsonify,request, g
 from sparkai.llm.llm import ChatSparkLLM, ChunkPrintHandler
 from sparkai.core.messages import ChatMessage
+import requests
+import json
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
     return "Hello, World!"
- 
+
 @app.route('/api' ,methods=['Post'])
+def api_data2():
+    # 获取 JSON 请求体
+    data = request.get_json()
+    print(data)
+    # 从请求体中提取参数
+    messages = data.get('messages')
+    messages = {
+               "model": "doubao-seed-1-6-250615",
+               "messages": [
+                   {
+                       "role": "user",
+                       "content": messages
+                   }
+               ],
+    "thinking":{
+         "type":"disabled"
+     }
+             }
+    url='https://ark.cn-beijing.volces.com/api/v3/chat/completions'
+    """
+    发送带请求头的POST请求
+
+    参数:
+    url (str): 请求的URL
+    headers (dict, optional): 请求头字典
+    payload (dict, optional): 请求体数据
+    timeout (int, optional): 请求超时时间(秒)
+
+    返回:
+    dict: 包含响应状态码、响应头和响应体的字典
+    """
+    try:
+        # 设置默认请求头
+        default_headers = {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer 9a30f984-2275-4bfa-9bfb-bf00105b90a6'
+        }
+
+        # 处理请求体
+        data = json.dumps(messages) if messages else None
+
+        # 发送POST请求
+        response = requests.post(
+            url,
+            headers=default_headers,
+            data=data,
+        )
+
+        # 检查响应状态码
+        response.raise_for_status()  # 如果状态码不是200,抛出HTTPError
+        print(response.json())
+        # 解析响应
+        try:
+            response_data = response.json()
+        except json.JSONDecodeError:
+            response_data = response.text
+
+        return response_data["choices"][0]["message"]["content"]
+
+    except requests.exceptions.HTTPError as http_err:
+        print(f'HTTP错误发生: {http_err}')
+        return None
+    except requests.exceptions.ConnectionError as conn_err:
+        print(f'连接错误发生: {conn_err}')
+        return None
+    except requests.exceptions.Timeout as timeout_err:
+        print(f'请求超时: {timeout_err}')
+        return None
+    except requests.exceptions.RequestException as req_err:
+        print(f'其他错误发生: {req_err}')
+        return None
+    return None
+
+@app.route('/api2' ,methods=['Post'])
 def api_data():
 
     # 获取 JSON 请求体

@@ -31,7 +31,7 @@ public class AESUtil {
             Cipher cipher = Cipher.getInstance(CIPHER_ALGORITHM2);
         SecretKeySpec secretKeySpec = new SecretKeySpec(Base64.getDecoder().decode(key), KEY_ALGORITHM);
         cipher.init(Cipher.ENCRYPT_MODE, secretKeySpec);
-        System.out.println(data.getBytes("UTF-8"));
+//        System.out.println(data.getBytes("UTF-8"));
         byte[] encrypted = cipher.doFinal(data.getBytes("UTF-8"));
         return Base64.getEncoder().encodeToString(encrypted);
     }

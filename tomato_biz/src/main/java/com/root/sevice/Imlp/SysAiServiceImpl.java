@@ -97,9 +97,14 @@ public class SysAiServiceImpl implements SysAiService {
 
             // 设置请求头，如Content-Type
             conn.setRequestProperty("Content-Type", "application/json");
+            Map<String,String> mapInput = new HashMap<>();
+            mapInput.put("messages",imput);
+            mapInput.put("temperature",temperature);
+            mapInput.put("top_k",top_k);
+            mapInput.put("max_tokens",max_tokens);
 
             // 写入请求体
-            String input = "{\"messages\":\""+imput+"\",\"temperature\":\""+temperature+"\",\"top_k\":\""+top_k+"\",\"max_tokens\":\""+max_tokens+"\"}";
+            String input =  JSONUtil.toJsonStr(mapInput);
             try (OutputStream os = conn.getOutputStream()) {
                 byte[] inputBytes = input.getBytes();
                 os.write(inputBytes);

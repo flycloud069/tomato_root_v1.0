@@ -10,15 +10,23 @@ import com.root.mapper.SysServiceParamMapper;
 import com.root.sevice.SysBaseServiceService;
 import com.root.sevice.SysServiceService;
 import com.root.util.DateUtil2;
+import com.root.util.ExcelExporterUtil;
 import com.root.util.NumberTomatoUtil;
 import com.root.util.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.activation.MimetypesFileTypeMap;
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.net.URLEncoder;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -48,7 +56,18 @@ public class SysServiceController {
             return ResponseUtil.success(map);
         }
     }
+    @RequestMapping(value = "/exportToExcel", method = RequestMethod.GET)
+    public void exportToExcel(HttpServletResponse response, SysServicePageDTO sysServicePageDTO)throws IOException {
+        // 示例数据
+        List<String> headers = Arrays.asList("ID", "Name", "Email");
+        List<List<String>> data = Arrays.asList(
+                Arrays.asList("1", "John Doe", "john@example.com"),
+                Arrays.asList("2", "Jane Smith", "jane@example.com")
+        );
 
+        ExcelExporterUtil.exportToExcel(response,headers, data);
+
+    }
     @RequestMapping(value = "/listPage", method = RequestMethod.POST)
     public ReturnMessage listPage(@RequestBody SysServicePageDTO sysServicePageDTO) {
         Map map =null;
